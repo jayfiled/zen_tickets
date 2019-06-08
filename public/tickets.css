@@ -1,0 +1,86 @@
+#ticket-box {
+  /*border: 2px solid gray;*/
+}
+
+
+#ticket-wrapper {
+  position: relative;
+  width: 500px;
+  /*min-height: 80px;*/
+  background: #fefefe;
+}
+
+.fade-wrap {
+  opacity: 0;
+  transition: opacity;
+  animation: fadeIn 1s ease-in both;
+}
+
+.ticket-title {
+/*  position: absolute;
+  top: 0;
+  left: 0;*/
+  margin: 0;
+  border-radius: 800px;
+  padding: 0px 10px 0px 10px;
+  z-index: 1;
+  transition: border 1s fadeIn  ;
+}
+
+div.ticket-title:hover {
+  border: 2px dashed rgba(233,0,123, 0.4);
+  z-index: 1;
+  cursor: pointer;
+}
+
+div.ticket-title > h2:hover {
+  margin: -2px;
+}
+
+.ticket-body {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+/*   border: 1px solid black; */
+}
+
+.relative-opacity {
+  position: relative;
+/*   opacity: 100; */
+  animation: fadeIn .2s ease-in both;
+}
+
+#ticket-wrapper div:nth-child(1) {
+  animation-delay: .4s;
+}
+
+#ticket-wrapper div:nth-child(2) {
+  animation-delay: .6s;
+}
+
+#ticket-wrapper div:nth-child(3) {
+  animation-delay: .8s;
+}
+
+#ticket-wrapper div:nth-child(4) {
+  animation-delay: 1s;
+}
+
+#ticket-wrapper div:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+#ticket-wrapper div:nth-child(6) {
+  animation-delay: 1.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

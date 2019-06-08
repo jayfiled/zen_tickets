@@ -17,19 +17,19 @@ end
 
 get '/' do
   # byebug
-  @ticket = get_ticket(base_url, id, auth)
+  # @ticket = get_ticket(base_url, id, auth)
   erb :home
 end
 
 get '/index' do
   # byebug
-  @ticket = get_ticket(base_url, auth)
+  # @ticket = get_ticket(base_url, auth)
   erb :index
 end
 
 get '/:id' do
   # byebug
-  @ticket = get_ticket(base_url, id, auth)
+  # @ticket = get_ticket(base_url, id, auth)
   erb :show
 end
 

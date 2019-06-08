@@ -1,0 +1,37 @@
+@import "welcome.css";
+@import "tickets.css";
+
+body {
+  font-family: courier, 'monospace';
+}
+
+#page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pink {
+  background: -webkit-linear-gradient(90deg,#fc415f,#e9007b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  margin-left: 15px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+
