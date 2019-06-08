@@ -1,11 +1,18 @@
-let idIncrementer = 0
-const ticketTitle = document.querySelectorAll('.ticket-title');
+// console.log("JS working")
 
-addRevealClass = (event) => {
-  event.currentTarget.parentElement.children[1].classList.toggle('relative-opacity');
+const delayedFunc = () => {
+  console.log("Running")
+  const ticketWrapper = document.querySelectorAll('.ticket-wrapper');
+
+  const addRevealClass = (event) => {
+    event.currentTarget.children[0].children[1].classList.toggle('relative-opacity');
+  }
+
+  ticketWrapper.forEach((element) => {
+    console.log('added')
+    element.addEventListener('click', addRevealClass);
+  });
 }
 
-ticketTitle.forEach((element) => {
-  element.addEventListener('click', addRevealClass);
-  idIncrementer += 1;
-});
+setTimeout(delayedFunc, 1100);
+

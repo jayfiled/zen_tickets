@@ -1,13 +1,15 @@
 
-  <div id="ticket-box">
-    <div id="ticket-wrapper">
-
+  <div class="ticket-box">
+    <div class="ticket-wrapper">
       <div class="fade-wrap">
+
         <div class="ticket-title">
-          <h2 class="pink">Printer is on fire</h2>
+          <h2 class="pink">a<%= @ticket["ticket"]["subject"] %></h2>
         </div>
         <div class="ticket-body">
-          <p class="pink">It's emitting lots of colourful smoke</p>
+          <p class="pink"><%= @ticket["ticket"]["description"] %></p>
         </div>
       </div>
+    </div>
 
+  </div>

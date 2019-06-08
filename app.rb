@@ -16,8 +16,9 @@ configure :development do
 end
 
 get '/' do
+  @words = 'hey'
   # byebug
-  # @ticket = get_ticket(base_url, id, auth)
+  @ticket = get_ticket(base_url, 1, auth)
   erb :home
 end
 
