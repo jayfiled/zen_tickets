@@ -18,7 +18,7 @@ end
 get '/' do
   @words = 'hey'
   # byebug
-  @ticket = get_ticket(base_url, 1, auth)
+  @tickets = get_all_tickets(base_url, auth)
   erb :home
 end
 
@@ -44,5 +44,5 @@ end
 
 def get_all_tickets(url, auth)
   result = HTTParty.get("#{url}tickets.json", basic_auth: auth)
-  result.parsed_response
+  result.parsed_response['tickets']
 end

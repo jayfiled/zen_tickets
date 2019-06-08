@@ -1,12 +1,14 @@
 .ticket-box {
+  position: relative;
   /*border: 2px solid gray;*/
+  /*min-height: 100vh;*/
+
 }
 
 
 .ticket-wrapper {
   position: relative;
   width: 500px;
-  /*min-height: 80px;*/
   background: #fefefe;
 }
 

@@ -1,15 +1,15 @@
 
   <div class="ticket-box">
-    <div class="ticket-wrapper">
-      <div class="fade-wrap">
-
-        <div class="ticket-title">
-          <h2 class="pink">a<%= @ticket["ticket"]["subject"] %></h2>
-        </div>
-        <div class="ticket-body">
-          <p class="pink"><%= @ticket["ticket"]["description"] %></p>
+    <% @tickets.each do |ticket| %>
+      <div class="ticket-wrapper">
+        <div class="fade-wrap">
+          <div class="ticket-title">
+            <h2 class="pink">a<%= ticket["subject"] %></h2>
+          </div>
+          <div class="ticket-body">
+            <p class="pink"><%= ticket["description"] %></p>
+          </div>
         </div>
       </div>
-    </div>
-
+    <% end %>
   </div>
