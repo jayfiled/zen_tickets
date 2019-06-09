@@ -1,10 +1,63 @@
 
-  <div class="ticket-box">
+  <div class="ticket-box in-left">
+    <% @tickets.first(25).each_with_index do |ticket, index| %>
+      <div class="ticket-wrapper">
+        <div class="fade-wrap">
+          <div class="ticket-title">
+            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+          </div>
+          <div class="ticket-body">
+            <p class="pink"><%= ticket["description"] %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- hidden next 25  -->
+
+    <div class="ticket-box">
     <% @tickets.each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
-            <h2 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+          </div>
+          <div class="ticket-body">
+            <p class="pink"><%= ticket["description"] %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- hidden next 25  -->
+
+
+    <div class="ticket-box">
+    <% @tickets.each_with_index do |ticket, index| %>
+      <div class="ticket-wrapper">
+        <div class="fade-wrap">
+          <div class="ticket-title">
+            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+          </div>
+          <div class="ticket-body">
+            <p class="pink"><%= ticket["description"] %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- hidden next 25  -->
+
+
+    <div class="ticket-box">
+    <% @tickets.each_with_index do |ticket, index| %>
+      <div class="ticket-wrapper">
+        <div class="fade-wrap">
+          <div class="ticket-title">
+            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
           </div>
           <div class="ticket-body">
             <p class="pink"><%= ticket["description"] %></p>
