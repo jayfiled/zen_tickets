@@ -1,5 +1,5 @@
 
-  <div class="ticket-box in-left">
+  <div class="ticket-box">
     <% @tickets.first(25).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
@@ -12,13 +12,13 @@
         </div>
       </div>
     <% end %>
+    <div class="more-button pink in-left"><span>More</span> >> </div>
   </div>
 
   <!-- hidden next 25  -->
-  <div id="more-button" class="pink">More >> </div>
 
     <div class="ticket-box">
-    <% @tickets.drop(25).first(24).each_with_index do |ticket, index| %>
+    <% @tickets.drop(25).first(25).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
@@ -30,13 +30,13 @@
         </div>
       </div>
     <% end %>
+    <div class="more-button pink in-left"><span>More</span> >> </div>
   </div>
 
   <!-- hidden next 25  -->
 
-
     <div class="ticket-box">
-    <% @tickets.drop(50).first(24).each_with_index do |ticket, index| %>
+    <% @tickets.drop(50).first(25).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
@@ -48,17 +48,17 @@
         </div>
       </div>
     <% end %>
+    <div class="more-button pink in-left"><span>More</span> >> </div>
   </div>
 
   <!-- hidden next 25  -->
 
-
     <div class="ticket-box">
-    <% @tickets.drop(75).first(24).each_with_index do |ticket, index| %>
+    <% @tickets.drop(75).first(25).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
-            <h3 class="pink"><%= index + 71 %>. <%= ticket["subject"] %></h2>
+            <h3 class="pink"><%= index + 76 %>. <%= ticket["subject"] %></h2>
           </div>
           <div class="ticket-body">
             <p class="pink"><%= ticket["description"] %></p>
@@ -66,4 +66,5 @@
         </div>
       </div>
     <% end %>
+    <div class="more-button pink in-left">No More!</div>
   </div>

@@ -1,0 +1,11 @@
+.more-button {
+  padding: 4px 12px 4px 12px;
+  margin: 8px;
+  border-radius: 4px;
+  transition: border 1s fadeIn  ;
+}
+
+span:hover {
+  margin-right: 8px;
+  cursor: pointer;
+}

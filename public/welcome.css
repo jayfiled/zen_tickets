@@ -2,3 +2,11 @@
   margin-top: 2em;
   margin-left: 1em;
 }
+
+#get-started {
+  border-bottom: 3px dashed transparent;
+}
+
+#get-started:hover {
+  border-bottom: 3px dashed rgba(233,0,123, 0.4);
+}
