@@ -7,6 +7,6 @@ class Ticket
 
   def self.get_all_tickets(url, auth)
     result = HTTParty.get("#{url}tickets.json", basic_auth: auth)
-    result.parsed_response['tickets']
+    result.parsed_response
   end
 end

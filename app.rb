@@ -16,6 +16,7 @@ configure :development do
 end
 
 get '/' do
-  @tickets = Ticket.get_all_tickets(base_url, auth)
+  binding.pry
+  @tickets = Ticket.get_all_tickets(base_url, auth)['tickets']
   erb :home
 end

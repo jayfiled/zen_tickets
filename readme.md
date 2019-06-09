@@ -20,7 +20,7 @@ To set this project up, open your terminal and type the following:
 - [x] **Set up .env for authentication masking**
 - [x] **Figure out how to use basic authentication with api calls**
 - [x] **Test out api calls in console and inspect the response**
-- [ ] **Offload the api method calls to a Ticket object** <sup>~ probably a sinatra dir problem ~</sup>
+- [x] **Offload the api method calls to a Ticket object** <sup>~ probably a sinatra dir problem ~</sup>
 - [x] **Set up basic front end and inject the response from API**
 - [x] **Style the front end**
   - [x] **Hide the description behind the subject and have it push elements down when clicked**
