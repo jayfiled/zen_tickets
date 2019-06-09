@@ -1,5 +1,5 @@
 
-// Delay adding of click event handlers until text has faded in
+// Delay adding of click event handlers until elements have faded in
 
 const delayedFunc = () => {
 

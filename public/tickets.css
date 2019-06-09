@@ -7,7 +7,6 @@
 .ticket-wrapper {
   position: relative;
   display: block;
-  /*width: 500px;*/
   background: #fefefe;
 }
 
@@ -25,7 +24,6 @@
 .ticket-title > h3 {
   padding: 4px 12px 4px 12px;
   margin: 8px;
-  /*border-radius: 800px;*/
   border-bottom: 3px dashed transparent;
   transition: border 1s fadeIn  ;
 }
@@ -48,6 +46,8 @@ div.ticket-title > h3:hover {
   animation: fadeIn .2s ease-in both;
 }
 
+/*fade each ticket subject in (if time)*/
+
 #ticket-wrapper div:nth-child(1) {
   animation-delay: .4s;
 }
@@ -58,18 +58,6 @@ div.ticket-title > h3:hover {
 
 #ticket-wrapper div:nth-child(3) {
   animation-delay: .8s;
-}
-
-#ticket-wrapper div:nth-child(4) {
-  animation-delay: 1s;
-}
-
-#ticket-wrapper div:nth-child(5) {
-  animation-delay: 1.2s;
-}
-
-#ticket-wrapper div:nth-child(6) {
-  animation-delay: 1.4s;
 }
 
 @keyframes fadeIn {

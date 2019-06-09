@@ -1,4 +1,3 @@
-# Ticket class to hold methods to get tickets from the Zendesk API
 class Ticket
   def get_ticket(url, id, auth)
     result = HTTParty.get("#{url}tickets/#{id}.json", basic_auth: auth)
