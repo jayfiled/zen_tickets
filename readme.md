@@ -3,9 +3,10 @@
 To set this project up, open your terminal and type the following:
 
 - `cd ~/`
+- `mkdir code-challenge-joel-james && cd code-challenge-joel-james`
 - `git clone git@github.com:jayfiled/zen_tickets.git`
-- `cd zen_tickets.git`
-- `gem install`
+- `cd zen_tickets`
+- `bundle install`
 - `touch .env`
 - `echo USERN = 'username.supplied.in.email' >> .env`
 - `echo PASS = 'password.supplied.in.email' >> .env`
@@ -27,7 +28,7 @@ To set this project up, open your terminal and type the following:
 - [x] **Refactor the view**
 - [x] **Display all results on one page and add a button to reveal 25 at a time**
 - [ ] **Run up some tests**
-- [ ] **Refactor app.rb to put methods in a class**
+- [x] **Refactor app.rb to put methods in a class**
 - [ ] **Refactor unused css**
 - [ ] **Dry up tickets.erb HTML so that I am loading partials instead of duplicate HTML**
 - [ ] **Dry up Javascript.  Lots of repetition for toggling classes and getting buttons**
