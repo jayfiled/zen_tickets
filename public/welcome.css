@@ -1,5 +1,4 @@
 #welcome {
-  position: absolute;
-  left: 100px;
-  top: 100px;
+  margin-top: 2em;
+  margin-left: 1em;
 }
