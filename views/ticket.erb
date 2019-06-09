@@ -15,13 +15,14 @@
   </div>
 
   <!-- hidden next 25  -->
+  <div id="more-button" class="pink">More >> </div>
 
     <div class="ticket-box">
-    <% @tickets.each_with_index do |ticket, index| %>
+    <% @tickets.drop(25).first(24).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
-            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+            <h3 class="pink"><%= index + 26 %>. <%= ticket["subject"] %></h2>
           </div>
           <div class="ticket-body">
             <p class="pink"><%= ticket["description"] %></p>
@@ -35,11 +36,11 @@
 
 
     <div class="ticket-box">
-    <% @tickets.each_with_index do |ticket, index| %>
+    <% @tickets.drop(50).first(24).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
-            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+            <h3 class="pink"><%= index + 51 %>. <%= ticket["subject"] %></h2>
           </div>
           <div class="ticket-body">
             <p class="pink"><%= ticket["description"] %></p>
@@ -53,11 +54,11 @@
 
 
     <div class="ticket-box">
-    <% @tickets.each_with_index do |ticket, index| %>
+    <% @tickets.drop(75).first(24).each_with_index do |ticket, index| %>
       <div class="ticket-wrapper">
         <div class="fade-wrap">
           <div class="ticket-title">
-            <h3 class="pink"><%= index + 1 %>. <%= ticket["subject"] %></h2>
+            <h3 class="pink"><%= index + 71 %>. <%= ticket["subject"] %></h2>
           </div>
           <div class="ticket-body">
             <p class="pink"><%= ticket["description"] %></p>

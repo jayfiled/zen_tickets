@@ -1,23 +1,11 @@
 @import "welcome.css";
 @import "tickets.css";
+@import "more_button.css";
+
 
 body {
   font-family: courier, 'monospace';
 }
-
-body {
- /* height: 100vh;
-  width: 100vw;*/
-/*  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;*//*
-  display: flex;
-  justify-content: center;
-  align-items: center;*/
-}
-
 
 .pink {
   background: -webkit-linear-gradient(90deg,#fc415f,#e9007b);
