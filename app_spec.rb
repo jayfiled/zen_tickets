@@ -4,11 +4,38 @@ base_url = 'https://katchupsupport.zendesk.com/api/v2/'
 auth = { username: ENV['USERN'], password: ENV['PASS'] }
 
 # Ticket model should connect to the Zendesk API
-describe 'Ticket model' do
+describe 'Ticket class' do
+  let(:tickets) { Ticket.get_all_tickets(base_url, auth) }
   it 'should connect to the Zendesk API' do
-    @tickets = Ticket.get_all_tickets(base_url, auth)
-    expect(@tickets).should_not eql(nil)
+    expect(:tickets).should_not eq(nil)
   end
+
+  it 'should return a hash' do
+    expect(:tickets).class.should eq(Hash)
+  end
+
+  it 'should have 100 tickets' do
+    expect(:tickets).size.should eq(100)
+  end
+
+  it 'should return an error when wrong authentication is used' do
+    expect(:tickets).to eq('...')
+  end
+  it 'should return an error when there is no network activity' do
+    expect(:tickets).to raise(Net::OpenTimeout).error
+  end
+# Net::OpenTimeout: execution expired
+# from /home/jayfiled/.rbenv/versions/2.5.3/lib/ruby/2.5.0/net/http.rb:937:in `initialize'
+end
+
+describe 'The web site' do
+  it 'should return a 200 OK' do
+    expect().should eq()
+  end
+    it 'should return a 404 not found' do
+    expect().should eq()
+  end
+
 end
 
 # Tests:

@@ -45,3 +45,10 @@ To set this project up, open your terminal and type the following:
 - Sinatra and local file paths.  Could not import css from a components folder/Classes from a model folder
 - Spent some time trying to use environment variables with Sinatra.
 - Was hoping for a simple, but elegant UI.  But ended up spending too much time and in the end, didn't end up with an elegant UI.
+
+### Improvements
+
+  - Use css frameworks
+  - Use ruby gems that help with pagination, api calls
+  - Use RAILS..
+  - Template the view

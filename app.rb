@@ -16,7 +16,13 @@ configure :development do
 end
 
 get '/' do
-  binding.pry
   @tickets = Ticket.get_all_tickets(base_url, auth)['tickets']
+  binding.pry
   erb :home
 end
+
+
+# For reference.  Error with bad internet connection
+
+# Net::OpenTimeout: execution expired
+# from /home/jayfiled/.rbenv/versions/2.5.3/lib/ruby/2.5.0/net/http.rb:937:in `initialize'
