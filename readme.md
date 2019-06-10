@@ -12,6 +12,9 @@ To set this project up, open your terminal and type the following:
 - `echo PASS = 'password.supplied.in.email' >> .env`
 - `bundle exec ruby app.rb`
 - Navigate to [localhost](http://localhost:4567/) in your browser
+- Run tests: `rspec app_spec.rb`
+  - Optional #1 : Turn off WiFi and run tests again
+  - Optional #2 : Change the password in the .env file and run the tests again.
 
 
 
@@ -27,7 +30,8 @@ To set this project up, open your terminal and type the following:
 - [x] **Emulate 100 tickets being inserted into the view**
 - [x] **Refactor the view**
 - [x] **Display all results on one page and add a button to reveal 25 at a time**
-- [ ] **Run up some tests**
+- [x] **Run up some tests**
+- [ ] ** Add automatic testing and live notifications
 - [x] **Refactor app.rb to put methods in a class**
 - [ ] **Refactor unused css**
 - [ ] **Dry up tickets.erb HTML so that I am loading partials instead of duplicate HTML**
