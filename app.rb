@@ -13,9 +13,18 @@ auth = { username: ENV['USERN'], password: ENV['PASS'] }
 configure :development do
   use BetterErrors::Middleware
   BetterErrors.application_root = File.expand_path('..', __dir__)
+  disable :show_exceptions
 end
 
-get '/' do
-  @tickets = Ticket.get_all_tickets(base_url, auth)['tickets']
-  erb :home
+begin
+  get '/' do
+    @tickets = Ticket.get_all_tickets(base_url, auth)['tickets']
+    erb :home
+  end
+rescue SocketError
+  erb :error
+end
+
+not_found do
+  erb :error
 end

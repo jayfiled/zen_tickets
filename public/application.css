@@ -13,6 +13,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.not-really-pink {
+  background: -webkit-linear-gradient(90deg,#7ce900,#e9007b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 p {
   margin-left: 15px;
   margin-top: 0;
@@ -24,4 +30,8 @@ h2 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 

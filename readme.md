@@ -31,6 +31,9 @@ To set this project up, open your terminal and type the following:
 - [x] **Refactor the view**
 - [x] **Display all results on one page and add a button to reveal 25 at a time**
 - [x] **Run up some tests**
+  - [x] **TTD**
+  - [x] **System tests**
+  - [x] **Front end tests in Capybara with Selenium**
 - [ ] ** Add automatic testing and live notifications
 - [x] **Refactor app.rb to put methods in a class**
 - [ ] **Refactor unused css**
