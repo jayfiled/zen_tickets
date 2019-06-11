@@ -18,7 +18,7 @@ To set this project up, open your terminal and type the following:
 - `touch .env`
 - `echo USERN = 'username.supplied.in.email' >> .env`
 - `echo PASS = 'password.supplied.in.email' >> .env`
-- `bundle exec ruby app.rb`
+- Start the web server 👉 `bundle exec ruby app.rb`
 - Navigate to [localhost](http://localhost:4567/) in your browser
 - Follow the prompts to retrieve your support tickets and view each one 💪
 - To run tests: `rspec app_spec.rb`
