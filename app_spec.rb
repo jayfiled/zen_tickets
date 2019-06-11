@@ -4,7 +4,7 @@ require File.dirname(__FILE__) + '/app.rb'
 
 base_url = 'https://katchupsupport.zendesk.com/api/v2/'
 auth = { username: ENV['USERN'], password: ENV['PASS'] }
-
+RSpec::Support::ObjectFormatter.default_instance.max_formatted_output_length = 250
 set :environment, :test
 
 def app
