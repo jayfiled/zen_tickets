@@ -33,7 +33,8 @@ To set this project up, open your terminal and type the following:
 - [x] **Run up some tests**
   - [x] **TTD**
   - [x] **System tests**
-  - [x] **Front end tests in Capybara with Selenium**
+  - [ ] **Front end tests in Capybara with Selenium**
+- [x] **Add basic error handling**
 - [ ] ** Add automatic testing and live notifications
 - [x] **Refactor app.rb to put methods in a class**
 - [ ] **Refactor unused css**
