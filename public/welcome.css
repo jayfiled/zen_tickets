@@ -4,7 +4,9 @@
 }
 
 #get-started {
-  border-bottom: 3px dashed transparent;
+  background: -webkit-linear-gradient(90deg,#b50cd3,#b234c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #get-started:hover {

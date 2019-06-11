@@ -1,6 +1,12 @@
 ## Zendesk - Create a ticket viewer challenge
 
-The below steps assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your system (and using the back cmd in windows) and also [ruby](https://www.ruby-lang.org/en/documentation/installation/).
+### Installation instructions
+
+The below steps assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your system (and using the bash cmd in windows) and also the latest version of [ruby](https://www.ruby-lang.org/en/documentation/installation/).
+
+To check your Ruby version:
+- `ruby -v`
+This was written using `ruby v2.5.3`
 
 To set this project up, open your terminal and type the following:
 
@@ -16,12 +22,14 @@ To set this project up, open your terminal and type the following:
 - Navigate to [localhost](http://localhost:4567/) in your browser
 - Follow the prompts to retrieve your support tickets and view each one 💪
 - To run tests: `rspec app_spec.rb`
-  - Optional #1 : Turn off WiFi and run tests again
-  - Optional #2 : Change the password in the .env file and run the tests again.
+  - Two tests will fail.  One testing a case with no network and one for wrong authentication.
+  - To make them pass (and others fail):
+    - Turn off WiFi and run tests again
+    - Change the password in the .env file and run the tests again.
 
 
 
-### Project To-do
+### To-do
 - [x] **Set up Sinatra project**
 - [x] **Set up .env for authentication masking**
 - [x] **Figure out how to use basic authentication with api calls**
@@ -50,17 +58,16 @@ To set this project up, open your terminal and type the following:
 
 ### Pain points
 - Browser needs more cache refreshes with Sinatra vs Rails
-- Wasted too much time with CSS
-  - too many absolute references
-  - too many bad class names
+- Problem: Wasted too much time with CSS positioning, display absolute, non memorable class names
+- Solution:  Moved the layout to the top right corner instead of the middle.
 - Not being able to add event listeners until elements have transitioned to the screen.
-- Sinatra and local file paths.  Could not import css from a components folder/Classes from a model folder
-- Spent some time trying to use environment variables with Sinatra.
-- Was hoping for a simple, but elegant UI.  But ended up spending too much time and in the end, didn't end up with an elegant UI.
+- Sinatra and local file paths.  Could not require relative if the class lived in another subdirectory. Moved to root.
+- Spent some time trying to use environment variables with Sinatra. My problem was that I was using USERNAME and PASSWORD which were reseved by the system.
+- Was hoping for a simple, but elegant UI.  But ended up spending too much time on hiding and unhiding elements.  Would look for a package in the future.
 
 ### Improvements
 
-  - Use css frameworks
+  - Use css or js frameworks
   - Use ruby gems that help with pagination, api calls
-  - Use RAILS..
+  - Would consider using rails as the resources online are more up to date.
   - Template the view
